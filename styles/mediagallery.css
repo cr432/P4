@@ -1,0 +1,73 @@
+/* DEVELOPER: Christopher Ramirez, IS117-001, Fall 2022*/
+
+.navbar {
+    background-color: black;
+}
+
+.navbar-brand img{
+    width: 80px;
+    border-left-color: whitesmoke;
+    border-radius: 200px;
+}
+
+.navbar-brand{
+    margin-right: 0;
+    padding: 0 20px;
+}
+
+.navbar-nav{
+    align-items: center;
+}
+
+.navbar .navbar-nav .nav-link{
+    color: white;
+    font-size: 20px;
+    padding: 0 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.5rem;
+}
